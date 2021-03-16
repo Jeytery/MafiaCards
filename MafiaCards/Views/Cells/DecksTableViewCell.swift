@@ -20,9 +20,6 @@ class DecksTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        decksCollectionView.delegate = collectionViewDelegate
-        decksCollectionView.dataSource = collectionViewDelegate
-    
         // Initialization code
     }
 

@@ -17,37 +17,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIx-xP-sLw" customClass="DeckCollectionViewCell" customModule="MafiaCards" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQJ-mM-4cr">
-                                <rect key="frame" x="79" y="89.5" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="TQJ-mM-4cr" firstAttribute="centerY" secondItem="iIx-xP-sLw" secondAttribute="centerY" id="Fsz-2v-xHf"/>
-                            <constraint firstItem="TQJ-mM-4cr" firstAttribute="centerX" secondItem="iIx-xP-sLw" secondAttribute="centerX" id="UtV-wX-Znl"/>
-                        </constraints>
-                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyY-oH-qoC">
+                        <rect key="frame" x="79" y="89.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="iIx-xP-sLw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Ge-Lh-7Bv"/>
-                <constraint firstItem="iIx-xP-sLw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Amv-We-yTf"/>
-                <constraint firstAttribute="bottom" secondItem="iIx-xP-sLw" secondAttribute="bottom" id="MvJ-jJ-XYn"/>
-                <constraint firstAttribute="trailing" secondItem="iIx-xP-sLw" secondAttribute="trailing" id="QXM-mS-vXf"/>
+                <constraint firstItem="EyY-oH-qoC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="JVd-lS-TJT"/>
+                <constraint firstItem="EyY-oH-qoC" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Qxe-Dd-kbB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="296" height="239"/>
             <connections>
-                <outlet property="mainView" destination="iIx-xP-sLw" id="J0C-7E-wxc"/>
-                <outlet property="titleLabel" destination="TQJ-mM-4cr" id="FqU-fw-Zdn"/>
+                <outlet property="titleLabel" destination="EyY-oH-qoC" id="fQq-Xv-hm4"/>
             </connections>
-            <point key="canvasLocation" x="273.91304347826087" y="87.723214285714278"/>
+            <point key="canvasLocation" x="132" y="108"/>
         </collectionViewCell>
     </objects>
 </document>

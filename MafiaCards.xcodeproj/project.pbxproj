@@ -16,9 +16,6 @@
 		CE21A4E425FA8BBF00092F14 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21A4E325FA8BBF00092F14 /* Design.swift */; };
 		CE21A4E725FB4CB000092F14 /* DecksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21A4E525FB4CB000092F14 /* DecksTableViewCell.swift */; };
 		CE21A4E825FB4CB000092F14 /* DecksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE21A4E625FB4CB000092F14 /* DecksTableViewCell.xib */; };
-		CE5C734025FE4F7A00FC1E51 /* DeckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C733E25FE4F7A00FC1E51 /* DeckCollectionViewCell.swift */; };
-		CE5C734125FE4F7A00FC1E51 /* DeckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5C733F25FE4F7A00FC1E51 /* DeckCollectionViewCell.xib */; };
-		CE96CA5525FD175400996108 /* DecksCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96CA5425FD175400996108 /* DecksCollectionViewDelegate.swift */; };
 		CE96CA5725FD18B400996108 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96CA5625FD18B400996108 /* Deck.swift */; };
 		CE96CA5925FD199700996108 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96CA5825FD199700996108 /* Role.swift */; };
 		CE97B79C25FA44440003081E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97B79B25FA44440003081E /* AppDelegate.swift */; };
@@ -32,6 +29,9 @@
 		CEF03D552600C1FA000EF5D8 /* RolesCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D542600C1FA000EF5D8 /* RolesCollectionViewDelegate.swift */; };
 		CEF03D582600C521000EF5D8 /* RoleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D562600C521000EF5D8 /* RoleCollectionViewCell.swift */; };
 		CEF03D592600C521000EF5D8 /* RoleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF03D572600C521000EF5D8 /* RoleCollectionViewCell.xib */; };
+		CEF03D5B2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D5A2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift */; };
+		CEF03D5E2600D7BF000EF5D8 /* DeckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D5C2600D7BF000EF5D8 /* DeckCollectionViewCell.swift */; };
+		CEF03D5F2600D7BF000EF5D8 /* DeckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF03D5D2600D7BF000EF5D8 /* DeckCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,9 +44,6 @@
 		CE21A4E325FA8BBF00092F14 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		CE21A4E525FB4CB000092F14 /* DecksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksTableViewCell.swift; sourceTree = "<group>"; };
 		CE21A4E625FB4CB000092F14 /* DecksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DecksTableViewCell.xib; sourceTree = "<group>"; };
-		CE5C733E25FE4F7A00FC1E51 /* DeckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCollectionViewCell.swift; sourceTree = "<group>"; };
-		CE5C733F25FE4F7A00FC1E51 /* DeckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeckCollectionViewCell.xib; sourceTree = "<group>"; };
-		CE96CA5425FD175400996108 /* DecksCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		CE96CA5625FD18B400996108 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		CE96CA5825FD199700996108 /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		CE97B79825FA44440003081E /* MafiaCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MafiaCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +59,9 @@
 		CEF03D542600C1FA000EF5D8 /* RolesCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		CEF03D562600C521000EF5D8 /* RoleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEF03D572600C521000EF5D8 /* RoleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoleCollectionViewCell.xib; sourceTree = "<group>"; };
+		CEF03D5A2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		CEF03D5C2600D7BF000EF5D8 /* DeckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEF03D5D2600D7BF000EF5D8 /* DeckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeckCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +84,8 @@
 				CEF03D572600C521000EF5D8 /* RoleCollectionViewCell.xib */,
 				CE21A4E525FB4CB000092F14 /* DecksTableViewCell.swift */,
 				CE21A4E625FB4CB000092F14 /* DecksTableViewCell.xib */,
-				CE5C733E25FE4F7A00FC1E51 /* DeckCollectionViewCell.swift */,
-				CE5C733F25FE4F7A00FC1E51 /* DeckCollectionViewCell.xib */,
+				CEF03D5C2600D7BF000EF5D8 /* DeckCollectionViewCell.swift */,
+				CEF03D5D2600D7BF000EF5D8 /* DeckCollectionViewCell.xib */,
 				CEF03D5026000A2F000EF5D8 /* RolesTableViewCell.swift */,
 				CEF03D5126000A2F000EF5D8 /* RolesTableViewCell.xib */,
 			);
@@ -166,7 +166,7 @@
 			children = (
 				CE97B7B325FA461E0003081E /* MainViewController.swift */,
 				CE21A4CF25FA4E9700092F14 /* MainNaviagationViewController.swift */,
-				CE96CA5425FD175400996108 /* DecksCollectionViewDelegate.swift */,
+				CEF03D5A2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift */,
 				CEF03D542600C1FA000EF5D8 /* RolesCollectionViewDelegate.swift */,
 			);
 			path = Controllers;
@@ -240,9 +240,9 @@
 			files = (
 				CEF03D592600C521000EF5D8 /* RoleCollectionViewCell.xib in Resources */,
 				CE97B7A825FA44450003081E /* LaunchScreen.storyboard in Resources */,
+				CEF03D5F2600D7BF000EF5D8 /* DeckCollectionViewCell.xib in Resources */,
 				CE21A4E825FB4CB000092F14 /* DecksTableViewCell.xib in Resources */,
 				CE21A4D925FA7A4F00092F14 /* NewDeckTableViewCell.xib in Resources */,
-				CE5C734125FE4F7A00FC1E51 /* DeckCollectionViewCell.xib in Resources */,
 				CE97B7B625FA461E0003081E /* MainViewController.xib in Resources */,
 				CE21A4E225FA88F700092F14 /* lang_en.json in Resources */,
 				CE97B7A525FA44450003081E /* Assets.xcassets in Resources */,
@@ -262,16 +262,16 @@
 				CE21A4DE25FA852300092F14 /* Localize.swift in Sources */,
 				CE96CA5925FD199700996108 /* Role.swift in Sources */,
 				CE21A4E425FA8BBF00092F14 /* Design.swift in Sources */,
+				CEF03D5E2600D7BF000EF5D8 /* DeckCollectionViewCell.swift in Sources */,
 				CE97B79C25FA44440003081E /* AppDelegate.swift in Sources */,
 				CE21A4E725FB4CB000092F14 /* DecksTableViewCell.swift in Sources */,
 				CEF03D5226000A2F000EF5D8 /* RolesTableViewCell.swift in Sources */,
-				CE5C734025FE4F7A00FC1E51 /* DeckCollectionViewCell.swift in Sources */,
+				CEF03D5B2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift in Sources */,
 				CEF03D4B260000FC000EF5D8 /* Model.swift in Sources */,
 				CE21A4D825FA7A4F00092F14 /* NewDeckTableViewCell.swift in Sources */,
 				CE21A4CE25FA49BD00092F14 /* Manager.swift in Sources */,
 				CE97B7B525FA461E0003081E /* MainViewController.swift in Sources */,
 				CE96CA5725FD18B400996108 /* Deck.swift in Sources */,
-				CE96CA5525FD175400996108 /* DecksCollectionViewDelegate.swift in Sources */,
 				CE21A4D025FA4E9700092F14 /* MainNaviagationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

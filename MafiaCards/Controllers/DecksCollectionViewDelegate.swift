@@ -1,8 +1,8 @@
 //
-//  DeckCollectionViewDelegate.swift
+//  DecksCollectionViewDelegate.swift
 //  MafiaCards
 //
-//  Created by user on 3/13/21.
+//  Created by user on 3/16/21.
 //  Copyright © 2021 Epsillent. All rights reserved.
 //
 
@@ -15,24 +15,31 @@ class DecksCollectionViewDelegate:
     UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout
 {
+
+    
+    //MARK: - vars
+    private var decks = [Deck]()
+    
     private var collectionView: UICollectionView
     
-    private var decks: [Deck] = [Deck]()
-    
-    //MARK: - iternal
+    //MARK: - iternal funcs
     private func configure() {
         collectionView.register(
-            UINib.init(nibName: "DeckCollectionViewCell", bundle: nil),
-            forCellWithReuseIdentifier: DeckCollectionViewCell.identifier
+           UINib.init(
+               nibName: "DeckCollectionViewCell",
+               bundle: nil),
+           forCellWithReuseIdentifier: DeckCollectionViewCell.identifier
         )
         (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.scrollDirection = .horizontal
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
     func collectionView(
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int
     ) -> Int {
-        return decks.count
+        return 10
     }
     
     func collectionView(
@@ -42,8 +49,7 @@ class DecksCollectionViewDelegate:
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: DeckCollectionViewCell.identifier,
             for: indexPath) as! DeckCollectionViewCell
-        cell.titleLabel.text = decks[indexPath.row].title
-        cell.mainView.backgroundColor = .cyan
+        cell.setUp(title: "\(indexPath.row)", color: "")
         return cell
     }
     
@@ -54,18 +60,14 @@ class DecksCollectionViewDelegate:
     {
        return CGSize(width: 200, height: 200)
     }
-
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("123")
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        didSelectItemAt indexPath: IndexPath)
+    {
+        print(indexPath.row)
     }
-            
     //MARK: - public funcs
-    public init(collectionView: UICollectionView, decks: [Deck]) {
-        self.collectionView = collectionView
-        self.decks = decks
-        super.init()
-        configure()
-    }
     
     public init(collectionView: UICollectionView) {
         self.collectionView = collectionView
@@ -77,5 +79,5 @@ class DecksCollectionViewDelegate:
         self.decks = decks
         collectionView.reloadData()
     }
-
+    
 }
