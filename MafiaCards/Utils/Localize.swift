@@ -11,6 +11,7 @@ import Foundation
 let NEW_DECK_LABEL = "new_deck_label"
 let TABLEVIEW_ROLES_LABEL = "tableview_roles_label"
 let TABLEVIEW_CARDS_LABEL = "tableview_cards_label"
+let NEW_DECK_BUTTON_TITLE = "new_deck_button_title"
 
 var localizeList = [String: String]()
 

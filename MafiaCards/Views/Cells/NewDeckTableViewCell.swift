@@ -19,6 +19,7 @@ class NewDeckTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         Design.setGreyStyle(button: &addNewButton)
+        addNewButton.setTitle(localize(id: NEW_DECK_BUTTON_TITLE), for: .normal)
         addNewDescLabel.text = localize(id: NEW_DECK_LABEL)
     }
 

@@ -101,24 +101,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
                 for: indexPath) as! NewDeckTableViewCell
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCell(
-                withIdentifier: RolesTableViewCell.identifier,
-                for: indexPath
-            ) as! RolesTableViewCell
             
-            let roles = [
-                Role(title: "1", description: "1", color: ""),
-                Role(title: "2", description: "1", color: ""),
-                Role(title: "3", description: "1", color: ""),
-                Role(title: "4", description: "1", color: "")
-            ]
-                
-            cell.setRoles(roles: roles)
-            
-            return cell
-        case 2:
-
-            let cell = tableView.dequeueReusableCell(
+        let cell = tableView.dequeueReusableCell(
                 withIdentifier: DecksTableViewCell.identifier,
                 for: indexPath) as! DecksTableViewCell
             
@@ -139,6 +123,22 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             ]
             
             cell.setDecks(decks: decksArr)
+            return cell
+        case 2:
+
+            let cell = tableView.dequeueReusableCell(
+                withIdentifier: RolesTableViewCell.identifier,
+                for: indexPath
+            ) as! RolesTableViewCell
+            
+            let roles = [
+                Role(title: "1", description: "1", color: ""),
+                Role(title: "2", description: "1", color: ""),
+                Role(title: "3", description: "1", color: ""),
+                Role(title: "4", description: "1", color: "")
+            ]
+                
+            cell.setRoles(roles: roles)
             
             return cell
         

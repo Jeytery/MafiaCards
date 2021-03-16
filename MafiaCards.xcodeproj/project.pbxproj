@@ -32,6 +32,7 @@
 		CEF03D5B2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D5A2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift */; };
 		CEF03D5E2600D7BF000EF5D8 /* DeckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D5C2600D7BF000EF5D8 /* DeckCollectionViewCell.swift */; };
 		CEF03D5F2600D7BF000EF5D8 /* DeckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF03D5D2600D7BF000EF5D8 /* DeckCollectionViewCell.xib */; };
+		CEF03D612600D95D000EF5D8 /* lang_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = CEF03D602600D95D000EF5D8 /* lang_ru.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		CEF03D5A2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		CEF03D5C2600D7BF000EF5D8 /* DeckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEF03D5D2600D7BF000EF5D8 /* DeckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeckCollectionViewCell.xib; sourceTree = "<group>"; };
+		CEF03D602600D95D000EF5D8 /* lang_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lang_ru.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				CE21A4E125FA88F700092F14 /* lang_en.json */,
+				CEF03D602600D95D000EF5D8 /* lang_ru.json */,
 			);
 			path = Languages;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				CE97B7B625FA461E0003081E /* MainViewController.xib in Resources */,
 				CE21A4E225FA88F700092F14 /* lang_en.json in Resources */,
 				CE97B7A525FA44450003081E /* Assets.xcassets in Resources */,
+				CEF03D612600D95D000EF5D8 /* lang_ru.json in Resources */,
 				CEF03D5326000A2F000EF5D8 /* RolesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

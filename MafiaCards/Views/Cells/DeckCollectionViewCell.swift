@@ -15,8 +15,6 @@ class DeckCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = .cyan
-        // Initialization code
     }
     
     public func setUp(

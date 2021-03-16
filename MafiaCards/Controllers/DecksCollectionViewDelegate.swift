@@ -39,7 +39,7 @@ class DecksCollectionViewDelegate:
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int
     ) -> Int {
-        return 10
+        return decks.count
     }
     
     func collectionView(
@@ -49,7 +49,9 @@ class DecksCollectionViewDelegate:
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: DeckCollectionViewCell.identifier,
             for: indexPath) as! DeckCollectionViewCell
-        cell.setUp(title: "\(indexPath.row)", color: "")
+        cell.layer.cornerRadius = 10
+        cell.backgroundColor = Design.calmOrange
+        cell.titleLabel.text = decks[indexPath.row].title
         return cell
     }
     

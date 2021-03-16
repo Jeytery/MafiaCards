@@ -49,7 +49,8 @@ class RolesCollectionViewDelegate:
             for: indexPath
         ) as! RoleCollectionViewCell
         cell.setRole(role: roles[indexPath.row])
-        cell.mainView.backgroundColor = .red
+        cell.mainView.backgroundColor = Design.calmBlue
+        cell.mainView.layer.cornerRadius = 10
         return cell
     }
     
