@@ -6,4 +6,10 @@
 //  Copyright © 2021 Epsillent. All rights reserved.
 //
 
+import UIKit
 import Foundation
+
+class Manager {
+    
+    
+}
