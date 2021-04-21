@@ -8,14 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CE21A4CE25FA49BD00092F14 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21A4CD25FA49BD00092F14 /* Manager.swift */; };
-		CE21A4D025FA4E9700092F14 /* MainNaviagationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21A4CF25FA4E9700092F14 /* MainNaviagationViewController.swift */; };
 		CE21A4D825FA7A4F00092F14 /* NewDeckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21A4D625FA7A4F00092F14 /* NewDeckTableViewCell.swift */; };
 		CE21A4D925FA7A4F00092F14 /* NewDeckTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE21A4D725FA7A4F00092F14 /* NewDeckTableViewCell.xib */; };
 		CE21A4DE25FA852300092F14 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21A4DD25FA852300092F14 /* Localize.swift */; };
 		CE21A4E225FA88F700092F14 /* lang_en.json in Resources */ = {isa = PBXBuildFile; fileRef = CE21A4E125FA88F700092F14 /* lang_en.json */; };
 		CE21A4E425FA8BBF00092F14 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21A4E325FA8BBF00092F14 /* Design.swift */; };
-		CE21A4E725FB4CB000092F14 /* DecksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21A4E525FB4CB000092F14 /* DecksTableViewCell.swift */; };
-		CE21A4E825FB4CB000092F14 /* DecksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE21A4E625FB4CB000092F14 /* DecksTableViewCell.xib */; };
+		CE26769C26245FFD00247A08 /* OneLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26769B26245FFD00247A08 /* OneLabelCollectionViewCell.swift */; };
+		CE2676A126246C9B00247A08 /* DecksCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2676A026246C9B00247A08 /* DecksCollectionViewDelegate.swift */; };
+		CE2676A426246CAE00247A08 /* RolesCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2676A326246CAE00247A08 /* RolesCollectionViewDelegate.swift */; };
+		CE2676A82624754700247A08 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2676A72624754700247A08 /* CustomTableViewCell.swift */; };
+		CE2676AC2624827100247A08 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2676AB2624827100247A08 /* Colors.swift */; };
+		CE2676B12624A51200247A08 /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2676AF2624A51200247A08 /* RoleViewController.swift */; };
+		CE2676B22624A51200247A08 /* RoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2676B02624A51200247A08 /* RoleViewController.xib */; };
+		CE57C3E526271BB100CEE13E /* UIFragmentGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57C3DE26271BB100CEE13E /* UIFragmentGesture.swift */; };
+		CE57C3E626271BB100CEE13E /* thirdparty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57C3DF26271BB100CEE13E /* thirdparty.swift */; };
+		CE57C3E726271BB100CEE13E /* UIFragmentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57C3E026271BB100CEE13E /* UIFragmentDelegate.swift */; };
+		CE57C3E826271BB100CEE13E /* UIFragmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57C3E126271BB100CEE13E /* UIFragmentManager.swift */; };
+		CE57C3E926271BB100CEE13E /* UIFragmentParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57C3E226271BB100CEE13E /* UIFragmentParameters.swift */; };
+		CE57C3EA26271BB100CEE13E /* UIFragmentEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57C3E326271BB100CEE13E /* UIFragmentEffect.swift */; };
+		CE57C3EB26271BB100CEE13E /* SlideGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57C3E426271BB100CEE13E /* SlideGesture.swift */; };
+		CE59E3F026109B81005E0C06 /* TypedCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59E3EF26109B81005E0C06 /* TypedCollectionViewDelegate.swift */; };
+		CE59E3F52610A7D7005E0C06 /* CollectionViewLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59E3F32610A7D7005E0C06 /* CollectionViewLabelTableViewCell.swift */; };
+		CE59E3F62610A7D7005E0C06 /* CollectionViewLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE59E3F42610A7D7005E0C06 /* CollectionViewLabelTableViewCell.xib */; };
 		CE96CA5725FD18B400996108 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96CA5625FD18B400996108 /* Deck.swift */; };
 		CE96CA5925FD199700996108 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96CA5825FD199700996108 /* Role.swift */; };
 		CE97B79C25FA44440003081E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97B79B25FA44440003081E /* AppDelegate.swift */; };
@@ -23,28 +37,39 @@
 		CE97B7A825FA44450003081E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE97B7A625FA44450003081E /* LaunchScreen.storyboard */; };
 		CE97B7B525FA461E0003081E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97B7B325FA461E0003081E /* MainViewController.swift */; };
 		CE97B7B625FA461E0003081E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE97B7B425FA461E0003081E /* MainViewController.xib */; };
+		CEBF585E2600F46300B710B6 /* RoundRolesCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF585D2600F46300B710B6 /* RoundRolesCollectionViewDelegate.swift */; };
+		CEDC56B82630C83900B2A49E /* RolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC56B62630C83900B2A49E /* RolesViewController.swift */; };
+		CEDC56B92630C83900B2A49E /* RolesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDC56B72630C83900B2A49E /* RolesViewController.xib */; };
 		CEF03D4B260000FC000EF5D8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D4A260000FC000EF5D8 /* Model.swift */; };
-		CEF03D5226000A2F000EF5D8 /* RolesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D5026000A2F000EF5D8 /* RolesTableViewCell.swift */; };
-		CEF03D5326000A2F000EF5D8 /* RolesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF03D5126000A2F000EF5D8 /* RolesTableViewCell.xib */; };
-		CEF03D552600C1FA000EF5D8 /* RolesCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D542600C1FA000EF5D8 /* RolesCollectionViewDelegate.swift */; };
-		CEF03D582600C521000EF5D8 /* RoleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D562600C521000EF5D8 /* RoleCollectionViewCell.swift */; };
-		CEF03D592600C521000EF5D8 /* RoleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF03D572600C521000EF5D8 /* RoleCollectionViewCell.xib */; };
-		CEF03D5B2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D5A2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift */; };
-		CEF03D5E2600D7BF000EF5D8 /* DeckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D5C2600D7BF000EF5D8 /* DeckCollectionViewCell.swift */; };
-		CEF03D5F2600D7BF000EF5D8 /* DeckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF03D5D2600D7BF000EF5D8 /* DeckCollectionViewCell.xib */; };
 		CEF03D612600D95D000EF5D8 /* lang_ru.json in Resources */ = {isa = PBXBuildFile; fileRef = CEF03D602600D95D000EF5D8 /* lang_ru.json */; };
+		CEF03D642600DC3D000EF5D8 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF03D622600DC3D000EF5D8 /* DeckViewController.swift */; };
+		CEF03D652600DC3D000EF5D8 /* DeckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF03D632600DC3D000EF5D8 /* DeckViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE21A4CD25FA49BD00092F14 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		CE21A4CF25FA4E9700092F14 /* MainNaviagationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNaviagationViewController.swift; sourceTree = "<group>"; };
 		CE21A4D625FA7A4F00092F14 /* NewDeckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDeckTableViewCell.swift; sourceTree = "<group>"; };
 		CE21A4D725FA7A4F00092F14 /* NewDeckTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewDeckTableViewCell.xib; sourceTree = "<group>"; };
 		CE21A4DD25FA852300092F14 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		CE21A4E125FA88F700092F14 /* lang_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lang_en.json; sourceTree = "<group>"; };
 		CE21A4E325FA8BBF00092F14 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
-		CE21A4E525FB4CB000092F14 /* DecksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksTableViewCell.swift; sourceTree = "<group>"; };
-		CE21A4E625FB4CB000092F14 /* DecksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DecksTableViewCell.xib; sourceTree = "<group>"; };
+		CE26769B26245FFD00247A08 /* OneLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE2676A026246C9B00247A08 /* DecksCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		CE2676A326246CAE00247A08 /* RolesCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		CE2676A72624754700247A08 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		CE2676AB2624827100247A08 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CE2676AF2624A51200247A08 /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
+		CE2676B02624A51200247A08 /* RoleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoleViewController.xib; sourceTree = "<group>"; };
+		CE57C3DE26271BB100CEE13E /* UIFragmentGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFragmentGesture.swift; sourceTree = "<group>"; };
+		CE57C3DF26271BB100CEE13E /* thirdparty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdparty.swift; sourceTree = "<group>"; };
+		CE57C3E026271BB100CEE13E /* UIFragmentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFragmentDelegate.swift; sourceTree = "<group>"; };
+		CE57C3E126271BB100CEE13E /* UIFragmentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFragmentManager.swift; sourceTree = "<group>"; };
+		CE57C3E226271BB100CEE13E /* UIFragmentParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFragmentParameters.swift; sourceTree = "<group>"; };
+		CE57C3E326271BB100CEE13E /* UIFragmentEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFragmentEffect.swift; sourceTree = "<group>"; };
+		CE57C3E426271BB100CEE13E /* SlideGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideGesture.swift; sourceTree = "<group>"; };
+		CE59E3EF26109B81005E0C06 /* TypedCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypedCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		CE59E3F32610A7D7005E0C06 /* CollectionViewLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLabelTableViewCell.swift; sourceTree = "<group>"; };
+		CE59E3F42610A7D7005E0C06 /* CollectionViewLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewLabelTableViewCell.xib; sourceTree = "<group>"; };
 		CE96CA5625FD18B400996108 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		CE96CA5825FD199700996108 /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		CE97B79825FA44440003081E /* MafiaCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MafiaCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,16 +79,13 @@
 		CE97B7A925FA44450003081E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE97B7B325FA461E0003081E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE97B7B425FA461E0003081E /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		CEBF585D2600F46300B710B6 /* RoundRolesCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundRolesCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		CEDC56B62630C83900B2A49E /* RolesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesViewController.swift; sourceTree = "<group>"; };
+		CEDC56B72630C83900B2A49E /* RolesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RolesViewController.xib; sourceTree = "<group>"; };
 		CEF03D4A260000FC000EF5D8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		CEF03D5026000A2F000EF5D8 /* RolesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesTableViewCell.swift; sourceTree = "<group>"; };
-		CEF03D5126000A2F000EF5D8 /* RolesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RolesTableViewCell.xib; sourceTree = "<group>"; };
-		CEF03D542600C1FA000EF5D8 /* RolesCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesCollectionViewDelegate.swift; sourceTree = "<group>"; };
-		CEF03D562600C521000EF5D8 /* RoleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleCollectionViewCell.swift; sourceTree = "<group>"; };
-		CEF03D572600C521000EF5D8 /* RoleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoleCollectionViewCell.xib; sourceTree = "<group>"; };
-		CEF03D5A2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksCollectionViewDelegate.swift; sourceTree = "<group>"; };
-		CEF03D5C2600D7BF000EF5D8 /* DeckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCollectionViewCell.swift; sourceTree = "<group>"; };
-		CEF03D5D2600D7BF000EF5D8 /* DeckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeckCollectionViewCell.xib; sourceTree = "<group>"; };
 		CEF03D602600D95D000EF5D8 /* lang_ru.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lang_ru.json; sourceTree = "<group>"; };
+		CEF03D622600DC3D000EF5D8 /* DeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
+		CEF03D632600DC3D000EF5D8 /* DeckViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeckViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,19 +99,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0E080926245C480063E570 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEF03D4A260000FC000EF5D8 /* Model.swift */,
+				CE96CA5825FD199700996108 /* Role.swift */,
+				CE96CA5625FD18B400996108 /* Deck.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CE21A4D525FA79F600092F14 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CE26769B26245FFD00247A08 /* OneLabelCollectionViewCell.swift */,
+				CE2676A72624754700247A08 /* CustomTableViewCell.swift */,
 				CE21A4D625FA7A4F00092F14 /* NewDeckTableViewCell.swift */,
 				CE21A4D725FA7A4F00092F14 /* NewDeckTableViewCell.xib */,
-				CEF03D562600C521000EF5D8 /* RoleCollectionViewCell.swift */,
-				CEF03D572600C521000EF5D8 /* RoleCollectionViewCell.xib */,
-				CE21A4E525FB4CB000092F14 /* DecksTableViewCell.swift */,
-				CE21A4E625FB4CB000092F14 /* DecksTableViewCell.xib */,
-				CEF03D5C2600D7BF000EF5D8 /* DeckCollectionViewCell.swift */,
-				CEF03D5D2600D7BF000EF5D8 /* DeckCollectionViewCell.xib */,
-				CEF03D5026000A2F000EF5D8 /* RolesTableViewCell.swift */,
-				CEF03D5126000A2F000EF5D8 /* RolesTableViewCell.xib */,
+				CE59E3F32610A7D7005E0C06 /* CollectionViewLabelTableViewCell.swift */,
+				CE59E3F42610A7D7005E0C06 /* CollectionViewLabelTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -101,6 +129,30 @@
 				CEF03D602600D95D000EF5D8 /* lang_ru.json */,
 			);
 			path = Languages;
+			sourceTree = "<group>";
+		};
+		CE2676AA2624825600247A08 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				CE21A4E325FA8BBF00092F14 /* Design.swift */,
+				CE2676AB2624827100247A08 /* Colors.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		CE57C3DD26271BB100CEE13E /* UIFragmentManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE57C3E126271BB100CEE13E /* UIFragmentManager.swift */,
+				CE57C3E026271BB100CEE13E /* UIFragmentDelegate.swift */,
+				CE57C3E226271BB100CEE13E /* UIFragmentParameters.swift */,
+				CE57C3DE26271BB100CEE13E /* UIFragmentGesture.swift */,
+				CE57C3E326271BB100CEE13E /* UIFragmentEffect.swift */,
+				CE57C3E426271BB100CEE13E /* SlideGesture.swift */,
+				CE57C3DF26271BB100CEE13E /* thirdparty.swift */,
+			);
+			name = UIFragmentManager;
+			path = ../../../FastTask/FastTask/UIFragmentManager;
 			sourceTree = "<group>";
 		};
 		CE97B78F25FA44440003081E = {
@@ -124,7 +176,10 @@
 			children = (
 				CE97B7AF25FA44C90003081E /* Core */,
 				CE97B7B225FA45760003081E /* Controllers */,
+				CE97B7B725FA462A0003081E /* XIB */,
+				CE2676AA2624825600247A08 /* Design */,
 				CE97B7B025FA44DC0003081E /* Utils */,
+				CE0E080926245C480063E570 /* Model */,
 				CE97B7B125FA44F30003081E /* Views */,
 				CE97B7A425FA44450003081E /* Assets.xcassets */,
 				CE97B7A625FA44450003081E /* LaunchScreen.storyboard */,
@@ -144,13 +199,11 @@
 		CE97B7B025FA44DC0003081E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CE57C3DD26271BB100CEE13E /* UIFragmentManager */,
 				CE21A4DA25FA832C00092F14 /* Languages */,
+				CEDC56C32630D64100B2A49E /* Delegates */,
 				CE21A4CD25FA49BD00092F14 /* Manager.swift */,
-				CE96CA5625FD18B400996108 /* Deck.swift */,
-				CEF03D4A260000FC000EF5D8 /* Model.swift */,
-				CE96CA5825FD199700996108 /* Role.swift */,
 				CE21A4DD25FA852300092F14 /* Localize.swift */,
-				CE21A4E325FA8BBF00092F14 /* Design.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -159,7 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				CE21A4D525FA79F600092F14 /* Cells */,
-				CE97B7B725FA462A0003081E /* XIB */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,9 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				CE97B7B325FA461E0003081E /* MainViewController.swift */,
-				CE21A4CF25FA4E9700092F14 /* MainNaviagationViewController.swift */,
-				CEF03D5A2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift */,
-				CEF03D542600C1FA000EF5D8 /* RolesCollectionViewDelegate.swift */,
+				CEF03D622600DC3D000EF5D8 /* DeckViewController.swift */,
+				CE2676AF2624A51200247A08 /* RoleViewController.swift */,
+				CEDC56B62630C83900B2A49E /* RolesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,9 +230,23 @@
 		CE97B7B725FA462A0003081E /* XIB */ = {
 			isa = PBXGroup;
 			children = (
+				CE2676B02624A51200247A08 /* RoleViewController.xib */,
 				CE97B7B425FA461E0003081E /* MainViewController.xib */,
+				CEF03D632600DC3D000EF5D8 /* DeckViewController.xib */,
+				CEDC56B72630C83900B2A49E /* RolesViewController.xib */,
 			);
 			path = XIB;
+			sourceTree = "<group>";
+		};
+		CEDC56C32630D64100B2A49E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				CE59E3EF26109B81005E0C06 /* TypedCollectionViewDelegate.swift */,
+				CE2676A026246C9B00247A08 /* DecksCollectionViewDelegate.swift */,
+				CE2676A326246CAE00247A08 /* RolesCollectionViewDelegate.swift */,
+				CEBF585D2600F46300B710B6 /* RoundRolesCollectionViewDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,16 +307,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF03D592600C521000EF5D8 /* RoleCollectionViewCell.xib in Resources */,
+				CEDC56B92630C83900B2A49E /* RolesViewController.xib in Resources */,
 				CE97B7A825FA44450003081E /* LaunchScreen.storyboard in Resources */,
-				CEF03D5F2600D7BF000EF5D8 /* DeckCollectionViewCell.xib in Resources */,
-				CE21A4E825FB4CB000092F14 /* DecksTableViewCell.xib in Resources */,
+				CE2676B22624A51200247A08 /* RoleViewController.xib in Resources */,
 				CE21A4D925FA7A4F00092F14 /* NewDeckTableViewCell.xib in Resources */,
 				CE97B7B625FA461E0003081E /* MainViewController.xib in Resources */,
 				CE21A4E225FA88F700092F14 /* lang_en.json in Resources */,
+				CEF03D652600DC3D000EF5D8 /* DeckViewController.xib in Resources */,
 				CE97B7A525FA44450003081E /* Assets.xcassets in Resources */,
 				CEF03D612600D95D000EF5D8 /* lang_ru.json in Resources */,
-				CEF03D5326000A2F000EF5D8 /* RolesTableViewCell.xib in Resources */,
+				CE59E3F62610A7D7005E0C06 /* CollectionViewLabelTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,22 +327,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF03D582600C521000EF5D8 /* RoleCollectionViewCell.swift in Sources */,
-				CEF03D552600C1FA000EF5D8 /* RolesCollectionViewDelegate.swift in Sources */,
+				CE2676A426246CAE00247A08 /* RolesCollectionViewDelegate.swift in Sources */,
 				CE21A4DE25FA852300092F14 /* Localize.swift in Sources */,
+				CE59E3F026109B81005E0C06 /* TypedCollectionViewDelegate.swift in Sources */,
 				CE96CA5925FD199700996108 /* Role.swift in Sources */,
+				CEDC56B82630C83900B2A49E /* RolesViewController.swift in Sources */,
+				CE57C3EB26271BB100CEE13E /* SlideGesture.swift in Sources */,
+				CE2676AC2624827100247A08 /* Colors.swift in Sources */,
+				CE57C3E526271BB100CEE13E /* UIFragmentGesture.swift in Sources */,
+				CE57C3E926271BB100CEE13E /* UIFragmentParameters.swift in Sources */,
+				CEBF585E2600F46300B710B6 /* RoundRolesCollectionViewDelegate.swift in Sources */,
 				CE21A4E425FA8BBF00092F14 /* Design.swift in Sources */,
-				CEF03D5E2600D7BF000EF5D8 /* DeckCollectionViewCell.swift in Sources */,
+				CE57C3E826271BB100CEE13E /* UIFragmentManager.swift in Sources */,
+				CEF03D642600DC3D000EF5D8 /* DeckViewController.swift in Sources */,
 				CE97B79C25FA44440003081E /* AppDelegate.swift in Sources */,
-				CE21A4E725FB4CB000092F14 /* DecksTableViewCell.swift in Sources */,
-				CEF03D5226000A2F000EF5D8 /* RolesTableViewCell.swift in Sources */,
-				CEF03D5B2600D4BC000EF5D8 /* DecksCollectionViewDelegate.swift in Sources */,
+				CE57C3EA26271BB100CEE13E /* UIFragmentEffect.swift in Sources */,
+				CE59E3F52610A7D7005E0C06 /* CollectionViewLabelTableViewCell.swift in Sources */,
+				CE26769C26245FFD00247A08 /* OneLabelCollectionViewCell.swift in Sources */,
+				CE57C3E626271BB100CEE13E /* thirdparty.swift in Sources */,
 				CEF03D4B260000FC000EF5D8 /* Model.swift in Sources */,
+				CE2676B12624A51200247A08 /* RoleViewController.swift in Sources */,
 				CE21A4D825FA7A4F00092F14 /* NewDeckTableViewCell.swift in Sources */,
+				CE2676A82624754700247A08 /* CustomTableViewCell.swift in Sources */,
 				CE21A4CE25FA49BD00092F14 /* Manager.swift in Sources */,
 				CE97B7B525FA461E0003081E /* MainViewController.swift in Sources */,
+				CE57C3E726271BB100CEE13E /* UIFragmentDelegate.swift in Sources */,
 				CE96CA5725FD18B400996108 /* Deck.swift in Sources */,
-				CE21A4D025FA4E9700092F14 /* MainNaviagationViewController.swift in Sources */,
+				CE2676A126246C9B00247A08 /* DecksCollectionViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

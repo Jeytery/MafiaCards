@@ -1,6 +1,8 @@
 {
-    "new_deck_label": "Press to create new deck",
+    "new_deck_label": "Press this button to create new deck",
     "tableview_roles_label": "Roles",
-    "tableview_deck_label": "Decks",
-    "new_deck_button_title": "New Deck"
+    "tableview_decks_label": "Decks",
+    "new_deck_button_title": "New Deck",
+    "shuffle_button_title": "Shuffle!"
+    
 }

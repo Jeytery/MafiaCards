@@ -19,29 +19,17 @@ class MainViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.allowsSelection = false 
         
-        tableView.register(
-            UINib(
-                nibName: "NewDeckTableViewCell",
-                bundle: nil
-            ),
-            forCellReuseIdentifier: NewDeckTableViewCell.identifier
-        )
+        tableView.register(UINib(
+            nibName: "NewDeckTableViewCell",
+            bundle: nil),
+            forCellReuseIdentifier: NewDeckTableViewCell.identifier)
         
-        tableView.register(
-            UINib(
-                nibName: "DecksTableViewCell",
-                bundle: nil
-            ),
-            forCellReuseIdentifier: DecksTableViewCell.identifier
-        )
-        
-        tableView.register(
-            UINib(
-                nibName: "RolesTableViewCell",
-                bundle: nil
-            ),
-            forCellReuseIdentifier: RolesTableViewCell.identifier
+        tableView.register(UINib(
+            nibName: "CollectionViewLabelTableViewCell",
+            bundle: nil),
+            forCellReuseIdentifier: CollectionViewLabelTableViewCell.identifier
         )    
     }
     
@@ -50,16 +38,9 @@ class MainViewController: UIViewController {
         configure()
     }
     
-    //MARK: - public funcs
-
-    
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
     func tableView(
         _ tableView: UITableView,
@@ -101,45 +82,72 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
                 for: indexPath) as! NewDeckTableViewCell
             return cell
         case 1:
+            let cell = tableView.dequeueReusableCell(
+                withIdentifier: CollectionViewLabelTableViewCell.identifier,
+                for: indexPath) as! CollectionViewLabelTableViewCell
+           
+            cell.showOptionButton(
+                title: "Add",
+                action:
+            {
+                let vc = DeckViewController(deck: Deck(
+                    title: "Unnamed Deck",
+                    color: "Red",
+                    description: "Unnamed Deck",
+                    roles: [Role(title: "No Role", description: "", color: "")]))
+                self.navigationController?.pushViewController(vc, animated: true)
+            })
             
-        let cell = tableView.dequeueReusableCell(
-                withIdentifier: DecksTableViewCell.identifier,
-                for: indexPath) as! DecksTableViewCell
+            cell.collectionViewDelegate = DecksCollectionViewDelegate(
+                collectionView: cell.collectionView,
+                decks:
+            [
+                Deck(title: "Classical Deck", color: "Black", description: "Black", roles: [
+                    Role(title: "Mafia", description: "", color: "Black"),
+                    Role(title: "Doctor", description: "", color: "Green"),
+                    Role(title: "Sheriff", description: "", color: "Green"),
+                    Role(title: "Don", description: "", color: "Red")]),
+                
+                Deck(title: "8 Players", color: "Green", description: "Red", roles: [
+                    Role(title: "1", description: "", color: "Black"),
+                    Role(title: "3", description: "", color: "Black"),
+                    Role(title: "4", description: "", color: "Green"),
+                    Role(title: "5", description: "", color: "Red")])
+            ])
             
-            let decksArr = [
-                Deck(title: "First", description: "deck1", roles: [Role]()),
-                Deck(title: "Second", description: "deck2", roles: [Role]()),
-                Deck(title: "Third", description: "deck3", roles: [Role]()),
-                Deck(title: "Fourth", description: "deck4", roles: [Role]()),
-                Deck(title: "First", description: "deck1", roles: [Role]()),
-                Deck(title: "Second", description: "deck2", roles: [Role]()),
-                Deck(title: "Third", description: "deck3", roles: [Role]()),
-                Deck(title: "First", description: "deck1", roles: [Role]()),
-                Deck(title: "Second", description: "deck2", roles: [Role]()),
-                Deck(title: "Third", description: "deck3", roles: [Role]()),
-                Deck(title: "First", description: "deck1", roles: [Role]()),
-                Deck(title: "Second", description: "deck2", roles: [Role]()),
-                Deck(title: "Third", description: "deck3", roles: [Role]())
-            ]
+            cell.collectionViewDelegate?.cellOnClick = {
+                [unowned self] collectionView, indexPath, data in
+                let vc = DeckViewController(deck: data[indexPath.row] as! Deck) 
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
             
-            cell.setDecks(decks: decksArr)
+            cell.titleLabel.text = localize(id: TABLEVIEW_DECKS_LABEL)
+
             return cell
         case 2:
-
             let cell = tableView.dequeueReusableCell(
-                withIdentifier: RolesTableViewCell.identifier,
-                for: indexPath
-            ) as! RolesTableViewCell
+                withIdentifier: CollectionViewLabelTableViewCell.identifier,
+                for: indexPath) as! CollectionViewLabelTableViewCell
             
-            let roles = [
-                Role(title: "1", description: "1", color: ""),
-                Role(title: "2", description: "1", color: ""),
-                Role(title: "3", description: "1", color: ""),
-                Role(title: "4", description: "1", color: "")
-            ]
-                
-            cell.setRoles(roles: roles)
+            cell.showOptionButton(
+                title: "Add",
+                action:
+            {
+            })
             
+            cell.collectionViewDelegate = RolesCollectionViewDelegate(
+                collectionView: cell.collectionView,
+                roles:
+            [
+                Role(title: "wfw", description: "", color: ""),
+                Role(title: "wfw", description: "", color: ""),
+                Role(title: "wfw", description: "", color: ""),
+                Role(title: "wfw", description: "", color: ""),
+                Role(title: "wfw", description: "", color: ""),
+                Role(title: "wfw", description: "", color: "")
+            ])
+            
+            cell.titleLabel.text = localize(id: TABLEVIEW_ROLES_LABEL)
             return cell
         
         default:
@@ -148,3 +156,21 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+
+class MainNaviagationViewController: UINavigationController {
+
+    
+    private func configure() {
+        if #available(iOS 11.0, *) {
+            self.navigationBar.prefersLargeTitles = true
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configure()
+    }
+    
+    //MARK: - public funcs
+
+}

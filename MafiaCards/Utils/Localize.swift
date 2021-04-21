@@ -8,20 +8,29 @@
 
 import Foundation
 
+//MARK: - constans
 let NEW_DECK_LABEL = "new_deck_label"
 let TABLEVIEW_ROLES_LABEL = "tableview_roles_label"
-let TABLEVIEW_CARDS_LABEL = "tableview_cards_label"
+let TABLEVIEW_DECKS_LABEL = "tableview_decks_label"
 let NEW_DECK_BUTTON_TITLE = "new_deck_button_title"
+let SHUFFLE_BUTTON_TITLE = "shuffle_button_title"
 
 var localizeList = [String: String]()
 
+//MARK: - functions
 func localize(id: String) -> String {
     return localizeList[id] ?? "Undefined"
 }
 
 public func setAppLanguage() {
-    guard let code = Locale.current.languageCode else { return }
-    parse(language: code)
+    guard let code = Locale.preferredLanguages.first else { return }
+    if code.hasPrefix("ru") {
+        parse(language: "ru")
+    } else if code.hasPrefix("en") {
+        parse(language: "en")
+    } else {
+        parse(language: "en")
+    }
 }
 
 public func parse(language: String) {

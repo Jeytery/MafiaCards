@@ -13,6 +13,8 @@ struct Deck: Codable {
     //MARK: - var
     var title: String
     
+    var color: String
+    
     var description: String
     
     var roles: [Role]
